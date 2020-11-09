@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="EdouardsBasics:jar">
+    <output-path>$PROJECT_DIR$/dev/plugins</output-path>
+    <root id="archive" name="EdouardsBasics.jar">
+      <element id="module-output" name="EdouardsBasics" />
+      <element id="extracted-dir" path="$USER_HOME$/libraries/spigot-api-1.16.3-R0.1-20201025.071724-27.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

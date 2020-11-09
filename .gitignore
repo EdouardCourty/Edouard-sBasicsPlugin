@@ -1,0 +1,15 @@
+.DS_Store
+out
+dev/world
+dev/world_the_end
+dev/world_nether
+dev/logs
+dev/banned-ips.json
+dev/banned-players.json
+dev/help.yml
+dev/ops.json
+dev/permissions.yml
+dev/server.properties
+dev/usercache.json
+dev/whitelist.json
+

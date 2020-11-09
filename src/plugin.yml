@@ -1,0 +1,12 @@
+name: "EdouardsBasics"
+version: 0.0.1
+author: "Edouard Courty"
+main: "com.edouardcourty.edouardsbasics.EdouardsBasics"
+api-version: 1.13
+commands:
+  startkit:
+    description: "Gives the new player some food, along with basic stuff and tools."
+    usage: /startkit
+  repair:
+    description: "Repairs the item held in the main hand. Costs more XP the more the item is broken."
+    usage: /repair
