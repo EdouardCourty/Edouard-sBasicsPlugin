@@ -10,3 +10,6 @@ commands:
   repair:
     description: "Repairs the item held in the main hand. Costs more XP the more the item is broken."
     usage: /repair
+  eventstick:
+    description: "Gives the player an event stick. The event stick can be used to manage some world parameters such as weather, time and global effects."
+    usage: /eventstick

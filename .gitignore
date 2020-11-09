@@ -12,4 +12,4 @@ dev/permissions.yml
 dev/server.properties
 dev/usercache.json
 dev/whitelist.json
-
+dev/plugins/*

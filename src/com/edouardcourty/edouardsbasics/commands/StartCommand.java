@@ -35,6 +35,8 @@ public class StartCommand implements CommandExecutor {
 
             player.getServer().getConsoleSender().sendMessage(String.format("Player %s received the starter kit !", player.getName()));
             player.sendMessage("You received the starter kit !");
+        } else {
+            commandSender.sendMessage("Only a player can execute this command.");
         }
         return true;
     }
