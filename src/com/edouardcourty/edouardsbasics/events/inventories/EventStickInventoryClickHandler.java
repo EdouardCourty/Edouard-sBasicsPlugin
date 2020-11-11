@@ -13,13 +13,17 @@ public class EventStickInventoryClickHandler implements Listener {
             Player player = (Player) event.getWhoClicked();
 
             switch (event.getCurrentItem().getType()) {
-                case CLOCK:
+                case WATER_BUCKET: // Weather management item
                     player.openInventory(InventoryManager.weatherChoiceInventory);
                     break;
-                case POTION:
+                case POTION: // Effect manager item
                     player.openInventory(InventoryManager.effectsInventory);
                     break;
-                case ENDER_PEARL:
+                case ENDER_PEARL: // Teleport item
+                    player.openInventory(InventoryManager.tpInventory);
+                    break;
+                case CLOCK: // Time manager item
+                    player.openInventory(InventoryManager.timeInventory);
                     break;
             }
 

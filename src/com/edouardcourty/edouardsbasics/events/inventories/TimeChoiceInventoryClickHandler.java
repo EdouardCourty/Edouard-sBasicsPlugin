@@ -7,10 +7,10 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 
-public class WeatherChoiceInventoryClickHandler implements Listener {
+public class TimeChoiceInventoryClickHandler implements Listener {
     @EventHandler
     public static void handle(InventoryClickEvent event) {
-        if (event.getInventory() == InventoryManager.weatherChoiceInventory) {
+        if (event.getInventory() == InventoryManager.timeInventory) {
             Player player = (Player) event.getWhoClicked();
             World world = player.getWorld();
 
@@ -18,15 +18,21 @@ public class WeatherChoiceInventoryClickHandler implements Listener {
                 case ARROW:
                     player.openInventory(InventoryManager.eventStickInventory);
                     break;
-                case TRIDENT:
-                    world.setThundering(true);
+                case ORANGE_CONCRETE:
+                    world.setTime(23500);
                     break;
-                case WATER_BUCKET:
-                    world.setStorm(true);
+                case YELLOW_CONCRETE:
+                    world.setTime(6000);
                     break;
-                case SUNFLOWER:
-                    world.setThundering(false);
-                    world.setStorm(false);
+                case RED_CONCRETE:
+                    world.setTime(11700);
+                    break;
+                case BLUE_CONCRETE:
+                    world.setTime(12575);
+                    break;
+                case BLACK_CONCRETE:
+                    world.setTime(14000);
+                    break;
             }
 
             event.setCancelled(true);

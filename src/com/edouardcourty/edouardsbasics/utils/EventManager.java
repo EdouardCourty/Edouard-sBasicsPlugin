@@ -1,8 +1,7 @@
 package com.edouardcourty.edouardsbasics.utils;
 
 import com.edouardcourty.edouardsbasics.events.RightClickWithEventStickHandler;
-import com.edouardcourty.edouardsbasics.events.inventories.EventStickInventoryClickHandler;
-import com.edouardcourty.edouardsbasics.events.inventories.WeatherChoiceInventoryClickHandler;
+import com.edouardcourty.edouardsbasics.events.inventories.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class EventManager {
@@ -10,5 +9,7 @@ public class EventManager {
         plugin.getServer().getPluginManager().registerEvents(new RightClickWithEventStickHandler(), plugin);
         plugin.getServer().getPluginManager().registerEvents(new WeatherChoiceInventoryClickHandler(), plugin);
         plugin.getServer().getPluginManager().registerEvents(new EventStickInventoryClickHandler(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new TimeChoiceInventoryClickHandler(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new EffectChoiceInventoryClickHandler(), plugin);
     }
 }
